@@ -1,0 +1,24 @@
+Algoritmo "Exercício04"
+
+Var
+  n1 : inteiro
+
+Inicio
+       escreval("Informe um número:")
+       leia(n1)
+       
+     se (n1 < 10) entao
+        escreva("Número MENOR que 10")
+     senao
+       se (n1 >= 10) E (n1 <= 50) entao
+           escreva("Número entre 10 e 50")
+      senao
+       se (n1 <= 51) E (n1 >= 60) entao
+           escreva("Número entre 51 e 60")
+        senao
+          escreva("Número MAIOR que 60")
+          
+        fimse
+     fimse
+   fimse
+Fimalgoritmo
