@@ -1,0 +1,16 @@
+Algoritmo "Exercicio03"
+
+Var
+  nr1, nr2, soma : inteiro
+
+Inicio
+  escreval("Digite o 1º número")
+  leia(nr1)
+  
+  escreval("Digite o 2º número")
+  leia(nr2)
+  
+  soma <- nr1 + nr2
+  
+  escreval("O resultado é:", soma)
+Fimalgoritmo
