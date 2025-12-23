@@ -1,0 +1,15 @@
+Algoritmo "For"
+
+Var
+num: inteiro
+Inicio
+escreval("Digite um número inteiro positivo")
+leia (num)
+ para num de num ate 0 passo - 1 faca
+   escreva(num," ")
+fimpara
+
+
+Fimalgoritmo
+
+Commits on Apr 18, 2024
