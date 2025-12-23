@@ -1,0 +1,102 @@
+Algoritmo "pilha"
+
+var
+
+   pilha: vetor[0..19] de caractere
+   opcao, topo, i: inteiro
+   nome: caractere
+
+procedimento empilhar()
+
+inicio
+
+   se (topo = 20) entao
+      escreval ("Pilha cheia!")
+   senao
+      escreval("Digite o elemento que deseja empilhar: ")
+      leia(pilha[topo])
+      topo:= topo+1
+   fimse
+
+fimprocedimento
+
+procedimento desempilhar()
+inicio
+
+   se topo >= 0 entao
+      topo:= topo -1
+   senao
+      escreval ("Pilha vazia")
+   fimse
+
+fimprocedimento
+
+
+procedimento limpar_todos()
+inicio
+
+   para i de 0 ate topo faca
+      se (topo > 0) entao
+         desempilhar()
+      fimse
+   fimpara
+
+fimprocedimento
+
+procedimento listar()
+inicio
+
+   escreval ("__LISTA__")
+
+   para i de 0 ate topo-1 faca
+      escreval (pilha[i])
+   fimpara
+
+fimprocedimento
+
+inicio
+
+
+   repita
+
+      escreval("Escolha a opção:")
+      escreval("1- Empilhar")      //incluir
+      escreval("2- Desempilhar")   //excluir
+      escreval("3- limpar")        //excluir tudo
+      escreval("4- Listar")        //mostrar
+      escreval("5- Vazia")         //ver a lista vazia
+      escreval("6- Sair")
+      leia(opcao)
+
+      se (opcao =1) entao
+         limpatela
+         empilhar()//procedimento
+      fimse
+
+      se (opcao =2) entao
+         limpatela
+         desempilhar() //procedimento
+      fimse
+
+      se (opcao =3) entao
+         limpatela
+         limpar_todos() //procedimento
+      fimse
+
+      se (opcao =4) entao
+         limpatela
+         listar()   //procedimento
+      fimse
+
+      se (opcao =5) entao
+         limpatela
+         se (topo = 0) entao
+            escreval ("Não existe elemento na pilha!")
+         senao
+            escreval ("Existe elemento na pilha!")
+         fimse
+      fimse
+
+   ate (opcao = 6)
+
+fimalgoritmo
