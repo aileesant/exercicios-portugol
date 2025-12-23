@@ -1,0 +1,58 @@
+algoritmo "Locadora De Livros"
+
+var
+   topo, n, aux, posicao : inteiro
+   //n = tamanho máximo da pilha
+   //aux:armazena valores temporários
+   vet : vetor [1..3] de caracter
+   y, opcao : caracter // y = nome do livro
+   k: inteiro   //k = Usad loops e iterações no cód para control iterações.
+   data: caracter
+   nome: caracter
+
+inicio
+        n <- 3
+        topo <- 0
+repita
+    limpatela
+       escreval ("Nossa locadora de livros.")
+       escreval (" ")
+       escreval (" ")
+      para k de n ate 1 passo -1 faca
+       escreval (k, " ... " , vet[k])
+fimpara
+
+      escreval ("incluir ... 1")
+      escreval ("Topo...... ", topo)
+      escreval (" ")
+      escreval ("---------------------------------------------")
+      escreval (" ")
+      escreval (" ")
+      escreval( "Menu Operacoes")
+      escreval( "0 - Sair")
+      escreval( "1 - ALUGAR")
+      escreva ("Escolha uma opcao: ")
+      leia(opcao)
+
+  se opcao = "1" entao
+      escreva( "Informe o nome do livro:")
+      leia(y)
+      escreval ( "Informe o nome do cliente:")
+      leia(nome)
+      escreval ( "Data do emprestimo:")
+      leia(data)
+      escreval( " " )
+
+  se topo = n entao
+       escreval ("Overflow - Inclusao Nao Executada - pressione enter")
+       leia(y)
+       senao
+    topo <- topo + 1
+    vet[topo] <- y + nome + data
+  fimse
+fimse
+
+ate opcao="0"
+
+
+fimalgoritmo
