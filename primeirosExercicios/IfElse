@@ -1,0 +1,76 @@
+Algoritmo "if-else"
+Var
+n1,n2: inteiro
+
+Inicio
+escreval ("Digite o primeiro numero: ")
+leia(n1)
+escreval("Digite o segundo numero: ")
+leia(n2)
+
+se n1 > n2 entao
+	escreval("O primeiro número é maior: ", n1)
+senao
+	escreval("O segundo número é maior: ", n2)
+fimse
+Fimalgoritmo
+
+			</pre>
+		</div>
+	</div>
+	<div class="wrapper">
+		<h3>Linguagem de Programação (Java)</h3>
+		<div style="display: flex; color: #ffffff">
+			<pre class="prettyprint lang-js ">
+				<xmp>
+public class IfElse {
+	public static void mais(String[] args) {
+		int n1 = Integer.parseInt(JOptionPane.showInputDialog(“Digite o primeiro número”));
+		int n2 = Integer.parseInt(JOptionPane.showInputDialog(“Digite o segundo número”));
+
+		if (n1 > n2) {
+			JOptionPane.showMessageDialog(null, “O primeiro número é maior: “ + n1);
+		} else {
+			JOptionPane.showMessageDialog(null, “O segundo número é menor: “ + n2);
+		}
+	}
+}
+
+			</pre>
+		</div>
+	</div>
+	<div>
+		<h3>Linguagem de Programação (Python)</h3>
+		<div style="display: flex; color: #ffffff">
+			<pre class="prettyprint lang-js ">
+				<xmp>
+n1 = int(input(“Digite o primeiro número”))
+n2 = int(input(“Digite o segundo número”))
+if n1 > n2:
+	print(“O primeiro número é maior: “, n1)
+else:
+	print(“O segundo número é maior: “, n2)
+
+
+			</pre>
+		</div>
+	</div>
+</div>
+</body>
+<script type="text/javascript">
+    $(".vertical-center-4").slick({
+        dots: true,
+        infinite: false,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear',
+
+    });
+</script>
+</html>
+</div></div></div></section>
+
+
+
+
+----Commits on Apr 18, 2024
