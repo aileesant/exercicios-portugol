@@ -1,0 +1,27 @@
+Algoritmo "Exercício7"
+
+Var
+    sexo : caractere
+    
+Inicio
+
+repita
+
+   escreval("Informe o sexo OU Digite S para sair do programa")
+   leia(sexo)
+   
+   se (sexo = "F") OU (sexo = "f") entao
+     escreval("Valor escolhido é FEMININO")
+   senao
+    se (sexo = "M") OU (sexo = "m") entao
+     escreval("Valor escolhido é MASCULINO")
+    senao
+      se (sexo <> "S") entao
+        escreval("Não entendi, digite novamente!")
+       fimse
+     fimse
+   fimse
+   
+ate sexo = "S"
+
+Fimalgoritmo
