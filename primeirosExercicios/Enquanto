@@ -1,0 +1,15 @@
+Algoritmo "enquanto-faca"
+
+Var
+num: inteiro
+Inicio
+num:= 1
+enquanto num > 0 faca
+   escreval("Digite um número inteiro positivo: ")
+   leia(num)
+fimenquanto
+
+
+Fimalgoritmo
+
+Commits on Apr 18, 2024
