@@ -1,0 +1,57 @@
+Algoritmo "Exemplo07"
+// Escreva um algoritmo para ler as dimensões de base e altura e calcular
+// a área conforme opção do usuário (Triângulo ou Retângulo)
+
+funcao calcula_retangulo(base: real; altura: real):real
+inicio
+   retorne base * altura
+fimfuncao
+
+procedimento calcula_triangulo(base: real; altura: real)
+inicio
+   area <- (base*altura)/2
+   escreval("A área do triângulo é de:", area)
+fimprocedimento
+
+procedimento escreve_opcoes()
+inicio
+   escreval("Informe a Base: ")
+   leia(base)
+   escreval("Informe a Altura: ")
+   leia(altura)
+fimprocedimento
+
+procedimento escreva_menu()
+inicio
+   escreval("Qual área você deseja calcular?")
+   escreval("1 - Retângulo")
+   escreval("2 - Triângulo")
+   escreval("3 - Sair")
+fimprocedimento
+
+Var
+   area, base, altura: real
+   opcao: inteiro
+
+Inicio
+
+   repita
+      escreva_menu()
+      leia(opcao)
+
+      escolha opcao
+      caso 1
+         escreve_opcoes()
+         //retângulo FUNÇÃO
+         area <- calcula_retangulo(base, altura)
+         escreval("A area do retângulo é de: ", area)
+      caso 2
+         escreve_opcoes()
+         //triângulo PROCEDIMENTO
+         calcula_triangulo(base, altura)
+      outrocaso
+         escreval("Opção inválida")
+      fimescolha
+
+   ate opcao = 3
+Fimalgoritmo
