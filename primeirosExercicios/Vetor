@@ -1,0 +1,21 @@
+Algoritmo "EstanteLivro"
+
+Var
+    livros : vetor [0..4] de caractere
+    indice : inteiro
+
+
+Inicio
+       Livros [0] <- "Senhor dos anéis"
+       Livros [1] <- "Guerras Secretas"
+       Livros [2] <- "O princípe"
+       Livros [3] <- "Programação em Java"
+       Livros [4] <- "Sherlock Holmes"
+       
+       escreval ("Qual livro você quer pegar da Estante?")
+       leia(indice)
+       
+       escreval(livros[indice])
+Fimalgoritmo
+
+Commits on Apr 18, 2024
