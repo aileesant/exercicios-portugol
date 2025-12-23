@@ -1,0 +1,104 @@
+Algoritmo "fila"
+
+var
+
+   fila: vetor[0..24] de caractere
+   opcao, topo, i , final: inteiro
+   nome: caractere
+   vazia , cheia: logico
+   
+
+procedimento adicionar()
+
+inicio
+
+   se (topo = 25) entao
+      escreval ("fila cheia!")
+   senao
+      escreval("Digite o elemento que deseja adicionar: ")
+      leia(fila[final])
+      final:= final+1
+   fimse
+
+fimprocedimento
+
+procedimento remover
+inicio
+
+   se  <= 0 entao
+      final:= final -1
+   senao
+      escreval ("fila vazia")
+   fimse
+
+fimprocedimento
+
+
+procedimento limpar_todos()
+inicio
+
+   para i de 0 ate topo faca
+      se (topo > 0) entao
+         limpar()
+      fimse
+   fimpara
+
+fimprocedimento
+
+procedimento listar()
+inicio
+
+   escreval ("__LISTA__")
+
+   para i de 0 ate final-1  faca
+      escreval (fila[i])
+   fimpara
+
+fimprocedimento
+
+inicio
+
+
+   repita
+
+      escreval("Escolha a opção:")
+      escreval("1- Adicionar")      //inserir elemento no final da fila
+      escreval("2- remover")        //remove e retorna o elemento do início da fila
+      escreval("3- limpar")        //remove todos os elementos da fila na ordem correta
+      escreval("4- Listar")        //listar todos os elementos existentes na fila
+      escreval("5- Vazia")         //retorna verdade se a fila estiver vazia,e falso caso contrário
+      escreval("6- Sair")          //encerrar atendimento
+      leia(opcao)
+
+      se (opcao =1) entao
+         limpatela
+         adicionar()//procedimento
+      fimse
+
+      se (opcao =2) entao
+         limpatela
+         remover() //procedimento
+      fimse
+
+      se (opcao =3) entao
+         limpatela
+         limpar_todos() //procedimento
+      fimse
+
+      se (opcao =4) entao
+         limpatela
+         listar()   //procedimento
+      fimse
+
+      se (opcao =5) entao
+         limpatela
+         se (topo = 0) entao
+            escreval ("Não existe elemento na pilha!")
+         senao
+            escreval ("Existe elemento na pilha!")
+         fimse
+      fimse
+
+   ate (opcao = 6)
+
+fimalgoritmo
