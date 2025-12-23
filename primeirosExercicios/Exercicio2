@@ -1,0 +1,23 @@
+Algoritmo "Exercicio02"
+
+Var
+   altura : real
+   idade : inteiro
+   nome : caractere
+   trabalha : logico
+
+Inicio
+
+escreval ("Qual seu nome?")
+leia(nome)
+
+escreval ("Qual sua idade?")
+leia(idade)
+
+escreval ("Qual sua altura?")
+leia(altura)
+
+escreval ("Você trabalha?")
+leia(trabalha)
+
+Fimalgoritmo
