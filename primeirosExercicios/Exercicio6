@@ -1,0 +1,20 @@
+Algoritmo "Exercício06"
+
+Var
+   sexo : caractere
+
+Inicio
+      escreval("Informe o sexo:")
+      leia(sexo)
+      
+    se (sexo = "F") OU (sexo = "f") OU (sexo = "feminino") entao
+       escreva("Informado sexo: FEMININO")
+    senao
+     se (sexo = "M") OU (sexo = "m") OU (sexo = "masculino") entao
+       escreva("Informado sexo: MASCULINO")
+    senao
+      escreva("Digite novamente!")
+    fimse
+ fimse
+
+Fimalgoritmo
