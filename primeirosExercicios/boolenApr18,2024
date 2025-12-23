@@ -1,0 +1,27 @@
+Algoritmo "FicarNoParque"
+
+Var
+    chovendo : logico
+    dinheiro : logico
+    modificado : caractere
+Inicio
+    chovendo := falso
+    dinheiro := verdadeiro
+    
+    enquanto (chovendo = falso) E (dinheiro = verdadeiro) faca
+      escreval("A pessoa está se divertindo no parque")
+      escreval("Agora está chovendo? S ou N")
+      leia(modificado)
+      SE (modificado = "S") ENTAO
+           chovendo := verdadeiro
+           escreval("Começou a chover! A pessoa vai embora")
+      SENAO
+           escreval("Acabou o dinheiro? S ou N")
+           leia(modificado)
+           SE (modificado = "S") ENTAO
+               dinheiro := falso
+               escreval("Acabou o dinheiro! A pessoa vai embora")
+          FIMSE
+      FIMSE
+   fimenquanto
+Fimalgoritmo
